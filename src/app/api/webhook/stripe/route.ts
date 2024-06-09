@@ -11,7 +11,7 @@ import {
 } from "~/server/api/stripe/stripe-webhook-handlers";
 
 const endpointSecret =
-  "whsec_ec2da0f2e5caa71f730eeb585bc76d64802d48c0f4a0eb8dabe2551e3259ca77";
+  "";
 export async function POST(request: Request) {
   const body = await request.text();
   const signature = headers().get("stripe-signature")!;
